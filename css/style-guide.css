@@ -65,6 +65,9 @@
     margin: auto;
     text-align: center;
   }
+  #legal{
+    color: var(--paragraph-color-on-color);
+  }
   .colors th {
     background-color: #999;
   }
@@ -141,6 +144,16 @@
     line-height: 3em;
   }
   .sm-page3 {
+    grid-area: page3;
+    background-color: #999;
+    line-height: 3em;
+  }
+  .sm-page4 {/*This does not show in site map because it is new and not represented by a block called .top or .left like the ones below yet*/
+    grid-area: page3;
+    background-color: #999;
+    line-height: 3em;
+  }
+  .sm-page5 {/*This does not show in site map because it is new and not represented by a block yet*/
     grid-area: page3;
     background-color: #999;
     line-height: 3em;
