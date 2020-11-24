@@ -117,7 +117,7 @@
     background-color: var(--nav-hover-background-color);
   }
   
-  .sitemap {
+  .sitemap {/*This site map needs updating to include all the links and pages of the site in the image*/
     display: grid;
     justify-content: center;
   
@@ -147,7 +147,7 @@
     grid-area: page3;
     background-color: #999;
     line-height: 3em;
-  }
+  } */
   .sm-page4 {/*This does not show in site map because it is new and not represented by a block called .top or .left like the ones below yet*/
     grid-area: page3;
     background-color: #999;
@@ -174,4 +174,4 @@
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
-  } 
+  }  
