@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');/*title font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');/*paragraph font*/
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #1D3461;
   --secondary-color: #57C4E5;
   --accent1-color: #FF6C0A;
   --accent2-color: white;
+  --accent3-color: black;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Ultra;
@@ -20,46 +23,31 @@
   --nav-hover-link-color: #FF6C0A;
   --nav-hover-background-color: #DCDCDC;
 }
+/*------------------------------universal------------------------------------------------------------------------*/
+/*------------------------------universal main----------------------------*/
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+main{
+  background-color:white;
+}
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+p{
+  font-family: var(--paragraph-font);
+}
+.bold{
+  font-weight: bold;
+}
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   text-rendering: optimizeLegibility;
-}
-#card-box{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-main{
-  background-color:white;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 62.5%;
-}
-body header {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.15rem;
-  border-bottom: 1px solid #000000;
-  padding: 15px;
-  background-color: var(--primary-color);
-}
-body header nav {
-  flex: 1;
-  text-align: right;
-}
-body header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-body header nav ul li {
-  display: inline-block;
-  padding: 7.5px;
-  margin-right: 7.5px;
 }
 body main {
   font-size: 1.15rem;
@@ -69,11 +57,47 @@ body main {
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
+/*------------------------------universal header--------------------------*/
+body header {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;/*1.15rem*/
+  border-top: 5px solid #000000;
+  border-bottom:5px solid #000000;
+  padding: 15px;
+  background-color: var(--primary-color);
+}
+body header nav ul {
+  margin: 0;
+  padding-top: 75px;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+  margin-right: 7.5px;
+}
+body header nav ul li a {
+  color: #fff;
+  padding: 7.5px;
+}
+body header nav ul li:hover a{
+  color:var(--accent1-color);
+  background-color: var(--secondary-color);
+}
+.title{
+  font-family:var(--heading-font);
+}
+#logo{
+  max-width: 300px;/*150px*/
+  max-height: 200px;/*100px*/
+}
+/*---------------------------Universal footer--------------------------*/
 body footer {
   display: flex;
   flex-direction: row;
   font-size: 1.15rem;
-  border-top: 1px solid #000000;
+  border-top: 5px solid #000000;
+  border-bottom:5px solid #000000;
   padding: 15px;
   background-color: var(--primary-color);
 }
@@ -93,7 +117,166 @@ body footer nav ul li {
   display: inline-block;
   padding: 7.5px;
   margin-right: 7.5px;
+} 
+body footer nav ul li a{
+  color:var(#fff);
+  
 }
+body footer nav ul li:hover a{
+  color:var(--accent1-color);
+  background-color: var(--secondary-color);
+
+}
+#footernav, a{
+  color:#fff;
+}
+#legal{
+  color: var(--secondary-color)
+}
+/*---------------------------------------Universal stuff end-----------------------------------------------------*/
+/*--------------This works primarily with the Code Experience Page----------*/
+#coding-experience-main{
+  text-align: center;
+}
+
+.projectbox{
+  margin: 10;
+  padding: 10;
+  border: 2px solid;
+  text-align: left;
+}
+/*----------------------------collapsible-------------------------------*/
+.collapsible {
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  padding: 20px 3rem 20px 20px;
+  margin: 0 0 20px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.collapsible:after {
+  position: absolute;
+  content: '+';
+  top: 10px;
+  right: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.collapsible.open:after {
+  content: 'x';
+}
+
+.collapsible.open + .collapsible-content {
+  max-height: none;
+  padding: 0 20px;
+}
+
+.collapsible-content {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  background-color: var(--accent3-color);
+  color: var(--secondary-color);
+}
+
+.collapsible-content img {
+  width: 100%;
+  height: auto;
+}
+
+.content-area {
+  margin: 10px 0;
+  overflow: auto;
+}
+/*-----------------------works with Home Page----------------------------*/
+#card-box{
+  display: flex;
+  background-color: var(--accent1-color);
+  justify-content: space-between;
+  margin: 20px;
+}
+.card-title{
+background-color: green;
+}
+.interests-card{
+  text-align: center;
+  border: 1px black solid;
+  max-width: 75%;
+  background-color: var(--secondary-color);
+}
+.interests-card:hover {
+  box-shadow: 1px 1px 4px 1px var(--accent1-color);
+}
+.important-to-me-card{
+  text-align: center;
+  border: 1px black solid;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+}
+.important-to-me-card:hover {
+  box-shadow: 1px 1px 4px 1px var(--accent1-color);
+}
+.hobbies-card{
+  text-align: center;
+  border: 1px black solid;
+  max-width: 75%;
+  background-color: var(--secondary-color);
+}
+.hobbies-card:hover {
+  box-shadow: 1px 1px 4px 1px var(--accent1-color);
+}
+main{
+  background-image: url(https://singularityhub.com/wp-content/uploads/2018/10/concept-circuit-board-blue-orange-shutterstock_703395397-1068x601.jpg) , url(paper.gif);
+}
+#homepagetitle{
+  color: var(--headline-color-on-color);
+  text-align: center;
+}
+/*------------------card testing code from video------------------------------*/
+/* html{
+  width:100%;
+  height:100%;
+}
+body{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.card {
+  width: 320px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 3px;
+  background-color: white;       
+} */
+
+/*------------------------Works With Resume page-------------------------*/
+.job1{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--secondary-color);
+}
+.job2{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--accent1-color);
+}
+.job3{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--secondary-color);
+}
+
 
 
 

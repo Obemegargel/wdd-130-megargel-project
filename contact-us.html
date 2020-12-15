@@ -15,7 +15,7 @@
     <header>
         <div id="logo-wrapper">
             <a href="index.html">
-                <img src="https://via.placeholder.com/150x100.jpg" id="logo">
+                <img  src="https://image.freepik.com/free-vector/tech-circle-blues-orange_74341.jpg" id="logo" alt="The Logo Image">
             </a>
         </div>
         <nav>
@@ -48,53 +48,56 @@
             </ul>
         </nav>
     </header>
-<p>
-    &nbsp;&nbsp;&nbsp;&nbsp;Hello! Welcome to the contact Me page! I hope you enjoy it! If you are looking for my resume you can find<br>
-        it on my <a href="subpage-1.html">Resume</a> page. If you are looking for the rest of my coding experience you<br> 
-        will find it on my <a href="subpage-2.html">Coding Experience</a> page. If you would like to learn more about<br>
-        what this page is for or want to learn a little bit more about me, then please visit the <a href="subpage-2.html">About</a> page. If you are<br>
-        unable to find the information you were hoping for or would like to leave a suggestion, then feel free to<br> 
-        contact me by either email or phone. Or you can<br> 
-        fill out the form below.<br>
-</p>
-<p>
+    <main>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;Hello! Welcome to the contact Me page! I hope you enjoy it! If you are looking for my resume you can find<br>
+            it on my <a href="subpage-1.html">Resume</a> page. If you are looking for the rest of my coding experience you<br> 
+            will find it on my <a href="subpage-2.html">Coding Experience</a> page. If you would like to learn more about<br>
+            what this page is for or want to learn a little bit more about me, then please visit the <a href="subpage-2.html">About</a> page. If you are<br>
+            unable to find the information you were hoping for or would like to leave a suggestion, then feel free to<br> 
+            contact me by either email or phone. Or you can<br> 
+            fill out the form below.<br>
+        </p>
+        <p>
         Contact information:<br>
         Phone: 111-111-1111<br>
         Email: notrealemail@email.com<br>
-</p>
-<div class="postcard">
-    <div class="stamp">
-        <div class="cost">
-            &#162;45
+        </p>
+        <div class="postcard">
+            <div class="stamp">
+                <div class="cost">
+                    &#162;45
+                </div>
+            </div>
+            <div class="title">
+                Postcard
+            </div>
+            <form method="GET" action="contact-us.html">
+                <label>
+                    Name:
+                    <input type="text" name="fullname">
+                </label>
+                <label>
+                    Subject:
+                    <input type="text" name="subject">
+                </label>
+                <label for="message-1">Message:</label>
+                <textarea id="message-1" name="message"></textarea>
+                <!--<input type="submit" value="Mail">    original button-->
+                <button type="button" onclick="fakeSend();">Send</button><!--maybe try changing mail to Submit-->
+            </form>
+        
+            <div class="address">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+                <div class="footer"></div>
         </div>
-    </div>
-    <div class="title">
-        Postcard
-    </div>
-    <form method="GET" action="contact-us.html">
-        <label>
-            Name:
-            <input type="text" name="fullname">
-        </label>
-        <label>
-            Subject:
-            <input type="text" name="subject">
-        </label>
-        <label for="message-1">Message:</label>
-        <textarea id="message-1" name="message"></textarea>
-        <!--<input type="submit" value="Mail">    original button-->
-        <button type="button" onclick="fakeSend();">Send</button><!--maybe try changing mail to Submit-->
-    </form>
-    
-    <div class="address">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </div>
-    <div class="footer"></div>
-</div>
+ 
+    </main>
 
 <!--this adds Javascript-->
 <script>
