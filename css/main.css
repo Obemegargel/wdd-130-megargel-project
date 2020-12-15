@@ -202,12 +202,9 @@ body footer nav ul li:hover a{
 /*-----------------------works with Home Page----------------------------*/
 #card-box{
   display: flex;
-  background-color: var(--accent1-color);
+  /* background-color: var(--accent1-color); */
   justify-content: space-between;
   margin: 20px;
-}
-.card-title{
-background-color: green;
 }
 .interests-card{
   text-align: center;
@@ -236,7 +233,7 @@ background-color: green;
 .hobbies-card:hover {
   box-shadow: 1px 1px 4px 1px var(--accent1-color);
 }
-main{
+#homemain{
   background-image: url(https://singularityhub.com/wp-content/uploads/2018/10/concept-circuit-board-blue-orange-shutterstock_703395397-1068x601.jpg) , url(paper.gif);
 }
 #homepagetitle{
