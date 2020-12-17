@@ -13,7 +13,7 @@
   --paragraph-font: Roboto, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #1D3461;  /* headlines on a white background ... black is all you need to type for black*/ 
+  --headline-color-on-white:black;  /* headlines on a white background ... black is all you need to type for black*/ 
   --headline-color-on-color: white; /* headlines on a colored background ... #FFFFFF means white*/ 
   --paragraph-color-on-white: #FF6C0A; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #57C4E5; /* paragraph text on a colored background ... #FFFFFF*/ 
@@ -258,22 +258,101 @@ body{
 } */
 
 /*------------------------Works With Resume page-------------------------*/
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+}
+.secondtitle{
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
 .job1{
+  grid-row: 2;
+  grid-column: 1 / 3;
   padding:5px;
   border: 5px var(--primary-color) solid;
   background-color: var(--secondary-color);
+}
+#job1image{
+  width: 300px;
+  height: 200px;
+  grid-row: 2;
+  grid-column: 2 / 3;
+  z-index: 1;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 20px 50px 20px 35%;
+  background-color: black;
+  
 }
 .job2{
-  padding:5px;
+  grid-row: 3;
+  grid-column: 1 / 3;
+  padding: 5px 5px 5px 35% ;
   border: 5px var(--primary-color) solid;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
 }
 .job3{
+  grid-row: 4;
+  grid-column: 1 / 3;
   padding:5px;
   border: 5px var(--primary-color) solid;
   background-color: var(--secondary-color);
 }
-
+.highschool{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--secondary-color);
+}
+.college{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--secondary-color);
+}
+.activitiesparagraph{
+  padding:5px;
+  border: 5px var(--primary-color) solid;
+  background-color: var(--secondary-color);
+}
+/*------------------------Works with About Page---------------------------*/
+.textboxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-image: url(https://www.howtogeek.com/wp-content/uploads/2016/08/650x300xlights-1-bluevswhitelight2.jpg.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.mVa5rx9ajm.jpg), url();
+}
+.purposebox{
+  grid-row: 1;
+  grid-column: 1;
+  background-color: var(--secondary-color);
+  color: var(--text-background-color);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+}
+.purposebox:hover{
+  box-shadow: 1px 1px 4px 1px var(--accent1-color);
+}
+.careerbox{
+  grid-row: 2;
+  grid-column: 2;
+  background-color: var(--secondary-color);
+  color: var(--text-background-color);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+}
+.careerbox:hover{
+  box-shadow: 1px 1px 4px 1px var(--accent1-color);
+}
+#aboutmain{
+  background-color: black;
+}
+#abouttitle{
+  text-align: center;
+  color: var(--headline-color-on-color);
+}
 
 
 
